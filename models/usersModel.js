@@ -3,10 +3,10 @@ let usuarios = [
     {id: 2, nome: "Waleria"}
 ];
 
-const getAll = () => {
+const getAllUsers = () => {
     return usuarios;
 };
 
-module.export = {
-    getAll
+module.exports = {
+    getAllUsers
 };

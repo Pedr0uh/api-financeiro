@@ -1,9 +1,10 @@
-const userModel = require("../models/userModel");
+const usersModel = require("../models/usersModel");
 
 const getAllUsers = (req, res) => {
-    res.send(userModel.getAll());
+    const usuarios = usersModel.getAllUsers();
+    res.send(usuarios);
 };
 
 module.exports = {
     getAllUsers
-}
+};

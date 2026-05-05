@@ -5,6 +5,15 @@ const getAllUsers = (req, res) => {
     res.send(usuarios);
 };
 
+const createUser = (req, res) => {
+    const nome = req.body.nome;
+
+    const novoUsuario = usersModel.createUser(nome);
+
+    res.send(novoUsuario);
+};
+
 module.exports = {
-    getAllUsers
+    getAllUsers,
+    createUser
 };

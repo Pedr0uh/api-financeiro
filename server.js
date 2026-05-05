@@ -10,6 +10,3 @@ app.use("/users", usersRoutes);
 app.listen(3000, () => {
     console.log("Servidor rodando...");
 });
-
-
-

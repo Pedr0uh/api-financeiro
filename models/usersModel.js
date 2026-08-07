@@ -26,6 +26,17 @@ const getUserById = (id) => {
     return usuarios.find((usuarios) => usuarios.id === id);
 };
 
+const updateUser = (id, nome) => {
+    const usuario = usuarios.find((usuario) => usuario.id === id);
+    
+    if (!usuario) {
+        return null;
+    };
+    
+    usuario.nome = nome;
+    
+    return usuario;
+};
 
 module.exports = {
     getAllUsers,
